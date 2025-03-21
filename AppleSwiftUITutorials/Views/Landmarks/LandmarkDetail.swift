@@ -64,5 +64,7 @@ struct LandmarkDetail: View {
 }
 
 #Preview {
-    LandmarkDetail(landmark: ModelData().landmarks[0])
+    let modelData = ModelData()
+    LandmarkDetail(landmark: modelData.landmarks[0])
+        .environment(modelData)
 }
