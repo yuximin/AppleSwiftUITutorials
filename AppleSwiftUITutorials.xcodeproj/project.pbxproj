@@ -6,19 +6,94 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		1803D96C2D93A9FB00041374 /* WatchAppleSwiftUITutorials Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 1803D95F2D93A9F800041374 /* WatchAppleSwiftUITutorials Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1803D96A2D93A9FB00041374 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18D3A5292D8D8F9000C0810E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1803D95E2D93A9F800041374;
+			remoteInfo = "WatchAppleSwiftUITutorials Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1803D96D2D93A9FB00041374 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				1803D96C2D93A9FB00041374 /* WatchAppleSwiftUITutorials Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		1803D95F2D93A9F800041374 /* WatchAppleSwiftUITutorials Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WatchAppleSwiftUITutorials Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18D3A5312D8D8F9000C0810E /* AppleSwiftUITutorials.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleSwiftUITutorials.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		1803D97D2D93AB5500041374 /* Exceptions for "AppleSwiftUITutorials" folder in "WatchAppleSwiftUITutorials Watch App" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				AppleSwiftUITutorialsApp.swift,
+				Assets.xcassets,
+				Model/Hike.swift,
+				Model/Landmark.swift,
+				Model/ModelData.swift,
+				Model/Profile.swift,
+				Resources/hikeData.json,
+				Resources/landmarkData.json,
+				Views/Helper/CircleImage.swift,
+				Views/Helper/MapView.swift,
+				Views/Landmarks/LandmarkList.swift,
+				Views/Landmarks/LandmarkRow.swift,
+			);
+			target = 1803D95E2D93A9F800041374 /* WatchAppleSwiftUITutorials Watch App */;
+		};
+		1803D9882D93EF0D00041374 /* Exceptions for "WatchAppleSwiftUITutorials Watch App" folder in "WatchAppleSwiftUITutorials Watch App" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				PushNotificationPayload.apns,
+			);
+			target = 1803D95E2D93A9F800041374 /* WatchAppleSwiftUITutorials Watch App */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		1803D9602D93A9F800041374 /* WatchAppleSwiftUITutorials Watch App */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				1803D9882D93EF0D00041374 /* Exceptions for "WatchAppleSwiftUITutorials Watch App" folder in "WatchAppleSwiftUITutorials Watch App" target */,
+			);
+			path = "WatchAppleSwiftUITutorials Watch App";
+			sourceTree = "<group>";
+		};
 		18D3A5332D8D8F9000C0810E /* AppleSwiftUITutorials */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				1803D97D2D93AB5500041374 /* Exceptions for "AppleSwiftUITutorials" folder in "WatchAppleSwiftUITutorials Watch App" target */,
+			);
 			path = AppleSwiftUITutorials;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1803D95C2D93A9F800041374 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		18D3A52E2D8D8F9000C0810E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -33,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				18D3A5332D8D8F9000C0810E /* AppleSwiftUITutorials */,
+				1803D9602D93A9F800041374 /* WatchAppleSwiftUITutorials Watch App */,
 				18D3A5322D8D8F9000C0810E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				18D3A5312D8D8F9000C0810E /* AppleSwiftUITutorials.app */,
+				1803D95F2D93A9F800041374 /* WatchAppleSwiftUITutorials Watch App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,6 +125,28 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		1803D95E2D93A9F800041374 /* WatchAppleSwiftUITutorials Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1803D9702D93A9FB00041374 /* Build configuration list for PBXNativeTarget "WatchAppleSwiftUITutorials Watch App" */;
+			buildPhases = (
+				1803D95B2D93A9F800041374 /* Sources */,
+				1803D95C2D93A9F800041374 /* Frameworks */,
+				1803D95D2D93A9F800041374 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				1803D9602D93A9F800041374 /* WatchAppleSwiftUITutorials Watch App */,
+			);
+			name = "WatchAppleSwiftUITutorials Watch App";
+			packageProductDependencies = (
+			);
+			productName = "WatchAppleSwiftUITutorials Watch App";
+			productReference = 1803D95F2D93A9F800041374 /* WatchAppleSwiftUITutorials Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
 		18D3A5302D8D8F9000C0810E /* AppleSwiftUITutorials */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18D3A53F2D8D8F9200C0810E /* Build configuration list for PBXNativeTarget "AppleSwiftUITutorials" */;
@@ -55,10 +154,12 @@
 				18D3A52D2D8D8F9000C0810E /* Sources */,
 				18D3A52E2D8D8F9000C0810E /* Frameworks */,
 				18D3A52F2D8D8F9000C0810E /* Resources */,
+				1803D96D2D93A9FB00041374 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1803D96B2D93A9FB00041374 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				18D3A5332D8D8F9000C0810E /* AppleSwiftUITutorials */,
@@ -80,6 +181,9 @@
 				LastSwiftUpdateCheck = 1620;
 				LastUpgradeCheck = 1620;
 				TargetAttributes = {
+					1803D95E2D93A9F800041374 = {
+						CreatedOnToolsVersion = 16.2;
+					};
 					18D3A5302D8D8F9000C0810E = {
 						CreatedOnToolsVersion = 16.2;
 					};
@@ -100,11 +204,19 @@
 			projectRoot = "";
 			targets = (
 				18D3A5302D8D8F9000C0810E /* AppleSwiftUITutorials */,
+				1803D95E2D93A9F800041374 /* WatchAppleSwiftUITutorials Watch App */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1803D95D2D93A9F800041374 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		18D3A52F2D8D8F9000C0810E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -115,6 +227,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1803D95B2D93A9F800041374 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		18D3A52D2D8D8F9000C0810E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -124,7 +243,77 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		1803D96B2D93A9FB00041374 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1803D95E2D93A9F800041374 /* WatchAppleSwiftUITutorials Watch App */;
+			targetProxy = 1803D96A2D93A9FB00041374 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		1803D96E2D93A9FB00041374 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WatchAppleSwiftUITutorials Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = JQM76K3G2N;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = WatchAppleSwiftUITutorials;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.whaley.demo.AppleSwiftUITutorials;
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.whaley.demo.AppleSwiftUITutorials.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 11.2;
+			};
+			name = Debug;
+		};
+		1803D96F2D93A9FB00041374 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WatchAppleSwiftUITutorials Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = JQM76K3G2N;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = WatchAppleSwiftUITutorials;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.whaley.demo.AppleSwiftUITutorials;
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.whaley.demo.AppleSwiftUITutorials.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 11.2;
+			};
+			name = Release;
+		};
 		18D3A53D2D8D8F9200C0810E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -305,6 +494,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1803D9702D93A9FB00041374 /* Build configuration list for PBXNativeTarget "WatchAppleSwiftUITutorials Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1803D96E2D93A9FB00041374 /* Debug */,
+				1803D96F2D93A9FB00041374 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		18D3A52C2D8D8F9000C0810E /* Build configuration list for PBXProject "AppleSwiftUITutorials" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
