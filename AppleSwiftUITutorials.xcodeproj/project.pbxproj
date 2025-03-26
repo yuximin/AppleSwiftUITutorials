@@ -36,6 +36,7 @@
 
 /* Begin PBXFileReference section */
 		1803D95F2D93A9F800041374 /* WatchAppleSwiftUITutorials Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WatchAppleSwiftUITutorials Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1803D98D2D93F29E00041374 /* MacAppleSwiftUITutorials.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacAppleSwiftUITutorials.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18D3A5312D8D8F9000C0810E /* AppleSwiftUITutorials.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleSwiftUITutorials.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -53,7 +54,6 @@
 				Resources/landmarkData.json,
 				Views/Helper/CircleImage.swift,
 				Views/Helper/MapView.swift,
-				Views/Landmarks/LandmarkList.swift,
 				Views/Landmarks/LandmarkRow.swift,
 			);
 			target = 1803D95E2D93A9F800041374 /* WatchAppleSwiftUITutorials Watch App */;
@@ -64,6 +64,32 @@
 				PushNotificationPayload.apns,
 			);
 			target = 1803D95E2D93A9F800041374 /* WatchAppleSwiftUITutorials Watch App */;
+		};
+		1803D9A92D93F37D00041374 /* Exceptions for "AppleSwiftUITutorials" folder in "MacAppleSwiftUITutorials" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				AppleSwiftUITutorialsApp.swift,
+				Assets.xcassets,
+				Model/Hike.swift,
+				Model/Landmark.swift,
+				Model/ModelData.swift,
+				Model/Profile.swift,
+				Resources/hikeData.json,
+				Resources/landmarkData.json,
+				Views/Helper/CircleImage.swift,
+				Views/Helper/FavoriteButton.swift,
+				Views/Helper/MapView.swift,
+				Views/Landmarks/LandmarkList.swift,
+				Views/Landmarks/LandmarkRow.swift,
+			);
+			target = 1803D98C2D93F29E00041374 /* MacAppleSwiftUITutorials */;
+		};
+		1803D9B32D94050500041374 /* Exceptions for "MacAppleSwiftUITutorials" folder in "AppleSwiftUITutorials" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				LandmarkCommands.swift,
+			);
+			target = 18D3A5302D8D8F9000C0810E /* AppleSwiftUITutorials */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
@@ -76,10 +102,19 @@
 			path = "WatchAppleSwiftUITutorials Watch App";
 			sourceTree = "<group>";
 		};
+		1803D98E2D93F29E00041374 /* MacAppleSwiftUITutorials */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				1803D9B32D94050500041374 /* Exceptions for "MacAppleSwiftUITutorials" folder in "AppleSwiftUITutorials" target */,
+			);
+			path = MacAppleSwiftUITutorials;
+			sourceTree = "<group>";
+		};
 		18D3A5332D8D8F9000C0810E /* AppleSwiftUITutorials */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
 				1803D97D2D93AB5500041374 /* Exceptions for "AppleSwiftUITutorials" folder in "WatchAppleSwiftUITutorials Watch App" target */,
+				1803D9A92D93F37D00041374 /* Exceptions for "AppleSwiftUITutorials" folder in "MacAppleSwiftUITutorials" target */,
 			);
 			path = AppleSwiftUITutorials;
 			sourceTree = "<group>";
@@ -88,6 +123,13 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		1803D95C2D93A9F800041374 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1803D98A2D93F29E00041374 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -109,6 +151,7 @@
 			children = (
 				18D3A5332D8D8F9000C0810E /* AppleSwiftUITutorials */,
 				1803D9602D93A9F800041374 /* WatchAppleSwiftUITutorials Watch App */,
+				1803D98E2D93F29E00041374 /* MacAppleSwiftUITutorials */,
 				18D3A5322D8D8F9000C0810E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -118,6 +161,7 @@
 			children = (
 				18D3A5312D8D8F9000C0810E /* AppleSwiftUITutorials.app */,
 				1803D95F2D93A9F800041374 /* WatchAppleSwiftUITutorials Watch App.app */,
+				1803D98D2D93F29E00041374 /* MacAppleSwiftUITutorials.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -145,6 +189,28 @@
 			);
 			productName = "WatchAppleSwiftUITutorials Watch App";
 			productReference = 1803D95F2D93A9F800041374 /* WatchAppleSwiftUITutorials Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1803D98C2D93F29E00041374 /* MacAppleSwiftUITutorials */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1803D9992D93F2A000041374 /* Build configuration list for PBXNativeTarget "MacAppleSwiftUITutorials" */;
+			buildPhases = (
+				1803D9892D93F29E00041374 /* Sources */,
+				1803D98A2D93F29E00041374 /* Frameworks */,
+				1803D98B2D93F29E00041374 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				1803D98E2D93F29E00041374 /* MacAppleSwiftUITutorials */,
+			);
+			name = MacAppleSwiftUITutorials;
+			packageProductDependencies = (
+			);
+			productName = MacAppleSwiftUITutorials;
+			productReference = 1803D98D2D93F29E00041374 /* MacAppleSwiftUITutorials.app */;
 			productType = "com.apple.product-type.application";
 		};
 		18D3A5302D8D8F9000C0810E /* AppleSwiftUITutorials */ = {
@@ -184,6 +250,9 @@
 					1803D95E2D93A9F800041374 = {
 						CreatedOnToolsVersion = 16.2;
 					};
+					1803D98C2D93F29E00041374 = {
+						CreatedOnToolsVersion = 16.2;
+					};
 					18D3A5302D8D8F9000C0810E = {
 						CreatedOnToolsVersion = 16.2;
 					};
@@ -205,12 +274,20 @@
 			targets = (
 				18D3A5302D8D8F9000C0810E /* AppleSwiftUITutorials */,
 				1803D95E2D93A9F800041374 /* WatchAppleSwiftUITutorials Watch App */,
+				1803D98C2D93F29E00041374 /* MacAppleSwiftUITutorials */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		1803D95D2D93A9F800041374 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1803D98B2D93F29E00041374 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -228,6 +305,13 @@
 
 /* Begin PBXSourcesBuildPhase section */
 		1803D95B2D93A9F800041374 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1803D9892D93F29E00041374 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -311,6 +395,64 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 11.2;
+			};
+			name = Release;
+		};
+		1803D99A2D93F2A000041374 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MacAppleSwiftUITutorials/MacAppleSwiftUITutorials.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MacAppleSwiftUITutorials/Preview Content\"";
+				DEVELOPMENT_TEAM = JQM76K3G2N;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.whaley.demo.MacAppleSwiftUITutorials;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		1803D99B2D93F2A000041374 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MacAppleSwiftUITutorials/MacAppleSwiftUITutorials.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MacAppleSwiftUITutorials/Preview Content\"";
+				DEVELOPMENT_TEAM = JQM76K3G2N;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.whaley.demo.MacAppleSwiftUITutorials;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -456,6 +598,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.whaley.demo.AppleSwiftUITutorials;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -485,6 +631,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.whaley.demo.AppleSwiftUITutorials;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -499,6 +649,15 @@
 			buildConfigurations = (
 				1803D96E2D93A9FB00041374 /* Debug */,
 				1803D96F2D93A9FB00041374 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1803D9992D93F2A000041374 /* Build configuration list for PBXNativeTarget "MacAppleSwiftUITutorials" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1803D99A2D93F2A000041374 /* Debug */,
+				1803D99B2D93F2A000041374 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
